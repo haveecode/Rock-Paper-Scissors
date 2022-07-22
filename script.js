@@ -9,7 +9,7 @@ function getComputerChoice() {
     } else if (randomNumber == 2) {
         return `scissors`;
     }
-console.log(getComputerChoice())
+    
 }
 
 function playRound(playerSelection, computerSelection) {
@@ -34,4 +34,6 @@ function playRound(playerSelection, computerSelection) {
 
 const playerSelection = prompt(`Choose your weapon: Rock, Paper or Scissors?`).toLowerCase();
 const computerSelection = getComputerChoice();
-console.log(playRound(playerSelection, computerSelection));
+console.log(`You selected ${playerSelection}`);
+console.log(`Computer selected ${computerSelection}`);
+console.log(playRound(playerSelection, computerSelection))
