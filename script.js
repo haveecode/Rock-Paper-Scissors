@@ -32,8 +32,17 @@ function playRound(playerSelection, computerSelection) {
 
 }
 
-const playerSelection = prompt(`Choose your weapon: Rock, Paper or Scissors?`).toLowerCase();
-const computerSelection = getComputerChoice();
-console.log(`You selected ${playerSelection}`);
-console.log(`Computer selected ${computerSelection}`);
-console.log(playRound(playerSelection, computerSelection))
+
+function game() {
+    
+    for (let i = 0; i < 5; i++) {
+        const playerSelection = prompt(`Choose your weapon: Rock, Paper or Scissors?`).toLowerCase();
+        const computerSelection = getComputerChoice();
+        console.log(`You selected ${playerSelection}`);
+        console.log(`Computer selected ${computerSelection}`);
+        console.log(playRound(playerSelection, computerSelection));
+        alert(playRound(playerSelection, computerSelection));
+    }
+}
+
+game();
