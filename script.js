@@ -53,15 +53,16 @@ function game() {
     }
 
     if (i = 4 && playerScore > computerScore) {
+        console.log(`Player: ${playerScore} - Computer: ${computerScore} - Ties: ${tiesScore}. You are the winner!`);
         alert(`With ${playerScore} win rounds, you beat the computer!`);
-        console.log(`Player: ${playerScore} - Computer: ${computerScore} - Ties: ${tiesScore}. You are the winner!`);
     } else if (playerScore < computerScore) {
-        alert(`Oh no, the computer won ${computerScore} rounds, it's the winner!`);
         console.log(`Player: ${playerScore} - Computer: ${computerScore} - Ties: ${tiesScore}. You lose!`);
+        alert(`Oh no, the computer won ${computerScore} rounds, it's the winner!`);
     } else if (playerScore == computerScore) {
-        alert(`There was no winner, it's a tie!`);
         console.log(`Player: ${playerScore} - Computer: ${computerScore} - Ties: ${tiesScore}. You are the winner!`);
+        alert(`There was no winner, it's a tie!`);
     }
+    
 }
 
 let computerScore = 0;
