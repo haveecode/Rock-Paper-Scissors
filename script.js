@@ -59,7 +59,7 @@ function game() {
         console.log(`Player: ${playerScore} - Computer: ${computerScore} - Ties: ${tiesScore}. You lose!`);
         alert(`Oh no, the computer won ${computerScore} rounds, it's the winner!`);
     } else if (playerScore == computerScore) {
-        console.log(`Player: ${playerScore} - Computer: ${computerScore} - Ties: ${tiesScore}. You are the winner!`);
+        console.log(`Player: ${playerScore} - Computer: ${computerScore} - Ties: ${tiesScore}. There was no winner! `);
         alert(`There was no winner, it's a tie!`);
     }
     
